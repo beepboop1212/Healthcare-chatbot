@@ -1,66 +1,4 @@
-# 🩻 Healthcare Chatbot using RAG (Retrieval-Augmented Generation)
-
-This project presents a **Healthcare Chatbot** built using the RAG (Retrieval-Augmented Generation) approach. The system intelligently answers medical-related questions by retrieving relevant context from a custom knowledge base and generating accurate, context-aware responses.
-
-## 💡 What is RAG?
-
-**Retrieval-Augmented Generation** combines the power of:
-- **Retriever**: Fetches relevant documents or passages from a knowledge base.
-- **Generator**: Generates a natural language response based on the retrieved context.
-
-This hybrid technique significantly improves accuracy and factual grounding, especially in knowledge-intensive domains like healthcare.
-
-## 🧠 Project Highlights
-
-- Utilizes a custom dataset or healthcare corpus for response generation.
-- Embedding-based similarity search to find the most relevant content.
-- Combines retrieval + generation using language models (e.g., GPT variants or other transformers).
-- Offers natural language interaction for patients and users seeking medical help.
-
-## ⚙️ Technologies Used
-
-- Python
-- LangChain (or similar framework)
-- SentenceTransformers / HuggingFace Transformers
-- FAISS for vector similarity search
-- Streamlit / Jupyter Notebook for interface and prototyping
-
-## 🚀 How to Run
-
-### Prerequisites
-
-```bash
-pip install langchain faiss-cpu sentence-transformers transformers
-
-Steps
-	1.	Clone the repository:
-
-git clone https://github.com/your-username/healthcare-chatbot-rag.git
-
-
-	2.	Open the Healthcare_chatbot(RAG).ipynb notebook.
-	3.	Run each cell to:
-	•	Embed documents
-	•	Create FAISS index
-	•	Query and retrieve relevant context
-	•	Generate responses with the LLM
-
-💬 Example Query
-
-User: What are the symptoms of hypertension?
-Bot: Hypertension, or high blood pressure, often has no symptoms. However, in some cases...
-
-📌 Notes
-	•	This chatbot is a prototype and not intended for real-world medical decision-making.
-	•	Always consult a licensed professional for medical concerns.
-
-```
-
-
-
----
-
-## 🏥 Healthcare Chatbot using LoRA Fine-Tuned Gemma
+# 🏥 Healthcare Chatbot using LoRA Fine-Tuned Gemma
 
 This notebook demonstrates how to fine-tune the **Gemma** language model using **LoRA (Low-Rank Adaptation)** for a domain-specific **Healthcare Chatbot**. The goal is to provide accurate, context-aware medical responses while optimizing training resource requirements.
 
@@ -144,5 +82,72 @@ model = PeftModel.from_pretrained(base_model, "lora-gemma-healthcare")
 
 - This chatbot is **not for real medical use**. It's a demo for educational/NLP research.
 - Always consult licensed professionals for health advice.
+
+---
+
+
+# 🩻 Healthcare Chatbot using RAG (Retrieval-Augmented Generation)
+
+This project presents a **Healthcare Chatbot** built using the RAG (Retrieval-Augmented Generation) approach. The system intelligently answers medical-related questions by retrieving relevant context from a custom knowledge base and generating accurate, context-aware responses.
+
+## 💡 What is RAG?
+
+**Retrieval-Augmented Generation** combines the power of:
+- **Retriever**: Fetches relevant documents or passages from a knowledge base.
+- **Generator**: Generates a natural language response based on the retrieved context.
+
+This hybrid technique significantly improves accuracy and factual grounding, especially in knowledge-intensive domains like healthcare.
+
+## 🧠 Project Highlights
+
+- Utilizes a custom dataset or healthcare corpus for response generation.
+- Embedding-based similarity search to find the most relevant content.
+- Combines retrieval + generation using language models (e.g., GPT variants or other transformers).
+- Offers natural language interaction for patients and users seeking medical help.
+
+## ⚙️ Technologies Used
+
+- Python
+- LangChain (or similar framework)
+- SentenceTransformers / HuggingFace Transformers
+- FAISS for vector similarity search
+- Streamlit / Jupyter Notebook for interface and prototyping
+
+## 🚀 How to Run
+
+### Prerequisites
+
+```bash
+pip install langchain faiss-cpu sentence-transformers transformers
+
+Steps
+	1.	Clone the repository:
+
+git clone https://github.com/your-username/healthcare-chatbot-rag.git
+
+
+	2.	Open the Healthcare_chatbot(RAG).ipynb notebook.
+	3.	Run each cell to:
+	•	Embed documents
+	•	Create FAISS index
+	•	Query and retrieve relevant context
+	•	Generate responses with the LLM
+
+💬 Example Query
+
+User: What are the symptoms of hypertension?
+Bot: Hypertension, or high blood pressure, often has no symptoms. However, in some cases...
+
+📌 Notes
+	•	This chatbot is a prototype and not intended for real-world medical decision-making.
+	•	Always consult a licensed professional for medical concerns.
+
+```
+
+
+
+
+
+
 
 
